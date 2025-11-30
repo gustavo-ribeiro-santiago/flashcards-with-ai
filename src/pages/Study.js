@@ -48,7 +48,7 @@ function Study() {
       
       if (cards.length === 0) {
         toast.error(t('general.error'));
-        navigate('/classes');
+        navigate('/flashcards-with-ai/classes');
         return;
       }
 
@@ -199,7 +199,7 @@ function Study() {
             
             <div className="flex space-x-4">
               <button
-                onClick={() => navigate('/classes')}
+                onClick={() => navigate('/flashcards-with-ai/classes')}
                 className="flex-1 flex items-center justify-center px-4 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors"
               >
                 <ArrowLeft className="h-5 w-5 mr-2" />

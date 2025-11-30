@@ -37,7 +37,7 @@ function Edit() {
     } catch (error) {
       console.error('Error fetching class data:', error);
       toast.error(t('general.error'));
-      navigate('/classes');
+      navigate('/flashcards-with-ai/classes');
     } finally {
       setLoading(false);
     }
@@ -143,7 +143,7 @@ function Edit() {
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center space-x-4">
           <button
-            onClick={() => navigate('/classes')}
+            onClick={() => navigate('/flashcards-with-ai/classes')}
             className="flex items-center px-3 py-2 text-gray-600 hover:text-gray-900 transition-colors"
           >
             <ArrowLeft className="h-5 w-5 mr-1" />

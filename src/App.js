@@ -32,10 +32,10 @@ function App() {
             
             <main>
               <Routes>
-                <Route path="/login" element={<Login />} />
+                <Route path="/flashcards-with-ai/login" element={<Login />} />
                 
                 <Route 
-                  path="/" 
+                  path="/flashcards-with-ai" 
                   element={
                     <PrivateRoute>
                       <Home />
@@ -44,7 +44,7 @@ function App() {
                 />
                 
                 <Route 
-                  path="/classes" 
+                  path="/flashcards-with-ai/classes" 
                   element={
                     <PrivateRoute>
                       <Classes />
@@ -53,7 +53,7 @@ function App() {
                 />
                 
                 <Route 
-                  path="/create" 
+                  path="/flashcards-with-ai/create" 
                   element={
                     <PrivateRoute>
                       <Create />
@@ -62,7 +62,7 @@ function App() {
                 />
                 
                 <Route 
-                  path="/study/:classId" 
+                  path="/flashcards-with-ai/study/:classId" 
                   element={
                     <PrivateRoute>
                       <Study />
@@ -71,7 +71,7 @@ function App() {
                 />
                 
                 <Route 
-                  path="/edit/:classId" 
+                  path="/flashcards-with-ai/edit/:classId" 
                   element={
                     <PrivateRoute>
                       <Edit />
@@ -80,7 +80,7 @@ function App() {
                 />
                 
                 <Route 
-                  path="/performance" 
+                  path="/flashcards-with-ai/performance" 
                   element={
                     <PrivateRoute>
                       <Performance />

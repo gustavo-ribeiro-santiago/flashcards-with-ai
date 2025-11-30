@@ -68,7 +68,7 @@ function Classes() {
           {t('classes.title')}
         </h1>
         <Link
-          to="/create"
+          to="/flashcards-with-ai/create"
           className="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
         >
           <Plus className="h-5 w-5 mr-2" />
@@ -86,7 +86,7 @@ function Classes() {
             {t('home.createFirst')}
           </p>
           <Link
-            to="/create"
+            to="/flashcards-with-ai/create"
             className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
             <Plus className="h-5 w-5 mr-2" />
@@ -129,7 +129,7 @@ function Classes() {
                 
                 <div className="space-y-2">
                   <Link
-                    to={`/study/${classItem.id}`}
+                    to={`/flashcards-with-ai/study/${classItem.id}`}
                     className="w-full flex items-center justify-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
                   >
                     <Play className="h-4 w-4 mr-2" />
@@ -138,7 +138,7 @@ function Classes() {
                   
                   <div className="flex space-x-2">
                     <Link
-                      to={`/edit/${classItem.id}`}
+                      to={`/flashcards-with-ai/edit/${classItem.id}`}
                       className="flex-1 flex items-center justify-center px-3 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors"
                     >
                       <Edit3 className="h-4 w-4 mr-1" />

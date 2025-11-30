@@ -120,7 +120,7 @@ def generate_flashcards(req: https_fn.Request) -> https_fn.Response:
         
         # Create prompt based on language
         if language == 'en':
-            prompt = f"""Generate {num_cards} flashcards about the following theme: {theme}. 
+            prompt = f"""Generate {num_cards} flashcards with the following theme/guidelines: {theme}. 
             Return a JSON object with the following structure:
             {{
                 "flashcards": [
@@ -132,10 +132,10 @@ def generate_flashcards(req: https_fn.Request) -> https_fn.Response:
             }}
             
             Make sure the flashcards are educational, accurate, and well-formatted.
-            Focus on key concepts, definitions, and important facts about {theme}.
+            Focus on following the theme/guidelines: {theme}.
             """
         else:
-            prompt = f"""Gere {num_cards} flashcards sobre o seguinte tema: {theme}. 
+            prompt = f"""Gere {num_cards} flashcards com o seguinte tema/guidelines: {theme}. 
             Retorne um objeto JSON com a seguinte estrutura:
             {{
                 "flashcards": [
@@ -147,7 +147,7 @@ def generate_flashcards(req: https_fn.Request) -> https_fn.Response:
             }}
             
             Certifique-se de que os flashcards sejam educativos, precisos e bem formatados.
-            Foque em conceitos-chave, definições e fatos importantes sobre {theme}.
+            Foque em seguir o tema/guidelines: {theme}.
             Responda em português.
             """
         

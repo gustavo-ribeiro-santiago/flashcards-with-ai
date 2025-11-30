@@ -44,8 +44,8 @@ const translations = {
     
     // Create
     'create.title': 'Criar Nova Classe',
-    'create.theme': 'Tema da Classe',
-    'create.themePlaceholder': 'Ex: Japonês, História do Brasil, Matemática...',
+    'create.theme': 'Explique como você quer que os cartões de estudo sejam gerados',
+    'create.themePlaceholder': 'Ex: Palavras básicas de japonês (1 palavra por cartão)',
     'create.numCards': 'Número de Cartões',
     'create.generate': 'Gerar Flashcards',
     'create.generating': 'Gerando...',
@@ -134,8 +134,8 @@ const translations = {
     
     // Create
     'create.title': 'Create New Class',
-    'create.theme': 'Class Theme',
-    'create.themePlaceholder': 'e.g. Japanese, Brazilian History, Mathematics...',
+    'create.theme': 'Explain how you want the flashcards to be generated',
+    'create.themePlaceholder': 'e.g. Basic Japanese words (1 word per card)',
     'create.numCards': 'Number of Cards',
     'create.generate': 'Generate Flashcards',
     'create.generating': 'Generating...',

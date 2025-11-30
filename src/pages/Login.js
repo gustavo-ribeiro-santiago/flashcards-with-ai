@@ -9,7 +9,7 @@ function Login() {
   const { t } = useLanguage();
 
   if (currentUser) {
-    return <Navigate to="/" />;
+    return <Navigate to="/flashcards-with-ai" />;
   }
 
   const handleGoogleSignIn = async () => {

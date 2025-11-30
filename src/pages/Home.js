@@ -51,7 +51,7 @@ function Home() {
       {/* Quick Actions */}
       <div className="grid md:grid-cols-3 gap-6 mb-12">
         <Link
-          to="/create"
+          to="/flashcards-with-ai/create"
           className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white p-6 rounded-lg shadow-lg transition-all transform hover:scale-105"
         >
           <div className="flex items-center space-x-3">
@@ -64,7 +64,7 @@ function Home() {
         </Link>
 
         <Link
-          to="/classes"
+          to="/flashcards-with-ai/classes"
           className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white p-6 rounded-lg shadow-lg transition-all transform hover:scale-105"
         >
           <div className="flex items-center space-x-3">
@@ -77,7 +77,7 @@ function Home() {
         </Link>
 
         <Link
-          to="/performance"
+          to="/flashcards-with-ai/performance"
           className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white p-6 rounded-lg shadow-lg transition-all transform hover:scale-105"
         >
           <div className="flex items-center space-x-3">
@@ -106,7 +106,7 @@ function Home() {
               {t('home.createFirst')}
             </p>
             <Link
-              to="/create"
+              to="/flashcards-with-ai/create"
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
             >
               <Plus className="h-4 w-4 mr-2" />
@@ -128,13 +128,13 @@ function Home() {
                 </p>
                 <div className="flex space-x-2">
                   <Link
-                    to={`/study/${classItem.id}`}
+                    to={`/flashcards-with-ai/study/${classItem.id}`}
                     className="flex-1 text-center px-3 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition-colors"
                   >
                     {t('classes.study')}
                   </Link>
                   <Link
-                    to={`/edit/${classItem.id}`}
+                    to={`/flashcards-with-ai/edit/${classItem.id}`}
                     className="flex-1 text-center px-3 py-2 border border-gray-300 text-gray-700 text-sm rounded hover:bg-gray-50 transition-colors"
                   >
                     {t('classes.edit')}
@@ -148,7 +148,7 @@ function Home() {
         {recentClasses.length > 0 && (
           <div className="mt-6 text-center">
             <Link
-              to="/classes"
+              to="/flashcards-with-ai/classes"
               className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
             >
               <BookOpen className="h-4 w-4 mr-2" />

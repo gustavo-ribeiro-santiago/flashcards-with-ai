@@ -54,7 +54,7 @@ function Create() {
       );
 
       toast.success(t('create.success'));
-      navigate(`/edit/${newClass.id}`);
+      navigate(`/flashcards-with-ai/edit/${newClass.id}`);
       
     } catch (error) {
       console.error('Error creating flashcards:', error);
