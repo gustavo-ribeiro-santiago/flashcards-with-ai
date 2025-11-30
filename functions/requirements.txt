@@ -3,3 +3,4 @@ firebase-admin>=6.5.0
 openai>=1.54.0
 firebase-functions
 python-dotenv
+google-cloud-logging

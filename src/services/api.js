@@ -15,7 +15,7 @@ const SAVE_PERFORMANCE_URL = process.env.REACT_APP_SAVE_PERFORMANCE_URL || (
 // Create axios instances for each service
 const apiGenerate = axios.create({
   baseURL: GENERATE_FLASHCARDS_URL,
-  timeout: 120000,
+  timeout: 240000,
   headers: {
     'Content-Type': 'application/json',
   },
